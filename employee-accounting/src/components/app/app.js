@@ -15,7 +15,7 @@ class App extends Component {
             data: [
                 {name: 'Michail K.', salary: 5000, increase: false, rise: true, id: 1},
                 {name: 'Roberto K.', salary: 70000, increase: true, rise: false, id: 2},
-                {name: 'Watanabe S.', salary: 12000, increase: false, rise: false, id: 3}
+                {name: 'Vlad G.', salary: 120000, increase: false, rise: false, id: 3}
             ],
             term: '', 
             filter: 'all'
@@ -77,7 +77,7 @@ class App extends Component {
             case 'rise':
                 return items.filter(item => item.rise);
             case 'moreThen1000':
-                return items.filter(item => item.salary > 1000);
+                return items.filter(item => item.salary > 100000);
             default:
                 return items
         }
